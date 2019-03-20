@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TicTacToe - Test</title>
+
+    <style>
+        body {
+            background-color: #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 70PX;
+            height: 70PX;
+            border: 2px solid #CCC;
+            text-align: center;
+            vertical-align: center;
+        }
+
+        td:first-of-type {
+            border-left-color: transparent;
+            border-top-color: transparent;
+        }
+
+        td:nth-of-type(2) {
+            border-top-color: transparent;
+        }
+
+        td:nth-of-type(3) {
+            border-right-color: transparent;
+            border-top-color: transparent;
+        }
+
+        tr:nth-of-type(3) td {
+            border-bottom-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tableCanvas"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="tictac.js"></script>
+</body>
+
+</html>
