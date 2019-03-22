@@ -51,13 +51,20 @@
         div {
             padding-top: 20px;
         }
+
+        .invisible{
+            display: none;
+        }
     </style>
 </head>
 
 <body>
     <div id="tableCanvas"></div>
     <div id="msg"></div>
-    <button onclick="reset();render();">Reiniciar</button>
+    <button id="btnNext" class="invisible" style="margin-top: 5px;" onclick="next();render();">Next</button>
+
+    <div id="score"></div>
+    <button style="margin-top: 20px;" onclick="reset();render();">Reset All</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="tictac.js"></script>
