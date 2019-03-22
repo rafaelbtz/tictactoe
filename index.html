@@ -11,6 +11,7 @@
         body {
             background-color: #FFF;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
@@ -26,6 +27,7 @@
             border: 2px solid #CCC;
             text-align: center;
             vertical-align: center;
+            cursor: pointer;
         }
 
         td:first-of-type {
@@ -45,11 +47,17 @@
         tr:nth-of-type(3) td {
             border-bottom-color: transparent;
         }
+
+        div {
+            padding-top: 20px;
+        }
     </style>
 </head>
 
 <body>
     <div id="tableCanvas"></div>
+    <div id="msg"></div>
+    <button onclick="reset();render();">Reiniciar</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="tictac.js"></script>
